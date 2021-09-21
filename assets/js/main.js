@@ -177,3 +177,11 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== COLOR RANGE ====================*/
+const colorRange = document.getElementById('custom-color')
+
+colorRange.addEventListener('change', () => {
+    document.documentElement.style.setProperty('--hue-color', colorRange.value);
+    //alert(colorRange.value)
+})

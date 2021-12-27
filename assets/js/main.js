@@ -1,3 +1,5 @@
+import { stringsData } from "../json/strings.js";
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const  navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -119,7 +121,7 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id');
+        const sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
@@ -185,3 +187,32 @@ colorRange.addEventListener('change', () => {
     document.documentElement.style.setProperty('--hue-color', colorRange.value);
     //alert(colorRange.value)
 })
+
+let currentLang = "eng"
+
+function updateTextLang() {
+    document.querySelectorAll('[textres]').forEach(span => {
+        const res = span.getAttribute('textres');
+        span.textContent = stringsData[currentLang][res];
+    });
+}
+
+updateTextLang()
+
+document.querySelector('#langswitch').addEventListener('click', () => {
+    document.querySelector('#langswitch').src=`assets/img/${currentLang}.png`
+    switch (currentLang) {
+        case "fr":
+            currentLang = "eng"
+            break;
+        case "eng":
+            currentLang = "fr"
+            break;
+    }
+    updateTextLang()
+})
+
+
+var rellax = new Rellax('.rellax');
+
+

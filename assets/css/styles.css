@@ -34,6 +34,7 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
+    --very-smaller-font-size: .6rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -207,6 +208,12 @@ img{
     color: var(--first-color);
 }
 
+@media screen and (min-width: 767px){
+    .android__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
@@ -218,6 +225,18 @@ img{
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
+    }
+
+    .lottie-animation{
+        width: 300px;
+        height: 300px;
+    }
+
+    .smt{
+        display: none;
+    }
+    .android__container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -326,7 +345,6 @@ img{
 }
 
 .home__codepre{
-
     font-family: var(--body-font);
     font-size: var(--small-font-size);
     color: var(--title-color);
@@ -454,6 +472,7 @@ img{
 
 .about__description{
     text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -1108,6 +1127,20 @@ img{
     .parallax{
         display: none;
     }
+
+    .lottie-animation{
+        width: 250px;
+        height: 250px;
+    }
+
+    .home__codepre{
+        font-size: var(--very-smaller-font-size);
+    }
+
+    .home__content{
+        grid-template-columns: 0fr;
+        padding-top: 0rem;
+    }
 }
 
 /* For medium devices */
@@ -1123,6 +1156,7 @@ img{
         justify-self: center;
     }
 
+    
     .about__container,
     .portfolio__content,
     .project__container,
@@ -1231,9 +1265,6 @@ img{
     .about__description{
         text-align: initial;
     }
-    .about__info{
-        justify-content: space-between;
-    }
     .about__buttons{
         justify-content: initial;
     }
@@ -1311,6 +1342,11 @@ img{
     .main,
     .footer__container{
         padding: 0;
+    }
+
+    .lottie-animation{
+        width: 400px;
+        height: 400px;
     }
 
     .home__blob{
@@ -1422,7 +1458,7 @@ img{
 
 .animated__background {
     position: -webkit-fixed;
-    z-index: -1;
+    z-index: -10;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -1435,6 +1471,7 @@ img{
     height: 60px;
     background-color: transparent;
     border: 6px solid ;
+    border-radius: 15px;
 }
 
 .box div:nth-child(1){ 
@@ -1477,12 +1514,7 @@ img{
     }
 }
 
-.phone__frame {
-    border-style:solid;
-    border-radius: 15px;
-    border-width: 55px 13px;
-    background-clip: content-box;
-}
+
 
 input[type=range] {
     background-color: transparent;
@@ -1497,8 +1529,8 @@ input[type=range] {
     border-radius: 15px;
   }
   input[type=range]::-webkit-slider-thumb {
-    width: 11px;
-    height: 11px;
+    width: 8px;
+    height: 8px;
     background: var(--first-color-alt);
     border-radius: 10px;
     -webkit-appearance: none;
@@ -1553,4 +1585,36 @@ input[type=range] {
 .parallax.sm{
     width: 60px;
     height: 60px;
+}
+
+.phone__frame {
+    border-style:solid;
+    border: 16px black solid;
+    border-radius: 36px;
+    border-top-width: 40px;
+    border-bottom-width: 40px;
+    background-clip: content-box;
+}
+
+.smt{
+    position: relative;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }

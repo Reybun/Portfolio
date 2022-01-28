@@ -38,7 +38,7 @@ const skillsContent = document.getElementsByClassName('skills__content'),
 function toggleSkills() {
     let itemClass = this.parentNode.className;
 
-    for(i = 0; i < skillsContent.length; i++){
+    for(let i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills__content skills__close';
     }
 
@@ -188,7 +188,7 @@ colorRange.addEventListener('change', () => {
     //alert(colorRange.value)
 })
 
-let currentLang = "eng"
+let currentLang = "fr"
 
 function updateTextLang() {
     document.querySelectorAll('[textres]').forEach(span => {
@@ -197,7 +197,7 @@ function updateTextLang() {
     });
 }
 
-updateTextLang()
+//updateTextLang()
 
 document.querySelector('#langswitch').addEventListener('click', () => {
     document.querySelector('#langswitch').src=`assets/img/${currentLang}.png`
@@ -213,6 +213,14 @@ document.querySelector('#langswitch').addEventListener('click', () => {
 })
 
 
-var rellax = new Rellax('.rellax');
+let rellax = new Rellax('.rellax');
 
+//Update age
+let bd = new Date(1999, 1, 20);
+let diff = new Date(new Date().getTime() - bd.getTime());
 
+const age = diff.getUTCFullYear() - 1970;
+
+document.querySelectorAll('#age').forEach(el => {
+    el.textContent = age
+})

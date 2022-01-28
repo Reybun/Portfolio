@@ -9,57 +9,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>
-        Responsive Portfolio Website
+        Hire Yann!
     </title>
 </head>
 <body>
 <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Yann</a>
+            <a href="#home" class="nav__logo nav__link">Yann S.</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> 
-                            <span textres = "nav_home">Home</span>
+                            <span textres = "nav_home">Accueil</span>
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> 
-                            <span textres = "nav_about">About</span>
+                            <span textres = "nav_about">Présentation</span>
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i>
-                            <span textres = "nav_skills">Skills</span>
+                            <span textres = "nav_skills">Connaissances</span>
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
                             <i class="uil uil-briefcase-alt nav__icon"></i> 
-                            <span textres = "nav_services">Services</span>
+                            <span textres = "nav_services">Compétences</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#qualification" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i>
-                            <span textres = "nav_portfolio">Portfolio Me</span>
+                            <span textres = "nav_portfolio">Qualifications</span>
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-estate nav__icon"></i> 
-                            <span textres = "nav_contact">Contact Me</span>
+                            <span textres = "nav_contact">Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -72,8 +69,14 @@
             <div class="nav__toggle" id="nav-toggle">
                 <i class="uil uil-apps"></i>
             </div>
-
-            <input type="range" class="nav__range" id="custom-color" min="0" max="360" step="10">
+            
+            <div style="display: grid;margin-top: 15px;">
+                <input type="range" class="nav__range"  id="custom-color" min="0" max="360" step="10">
+                <label style="text-align: center;font-size: small;" class="rainbow_text_animated">
+                    couleur
+                </label>
+            </div>
+            
             <img id="langswitch" src="assets/img/fr.png" width="20px" height="20px">
 
         </nav>
@@ -88,39 +91,24 @@
         </div>
     </div>
 
- 
-
 
 <!--==================== MAIN ====================-->
     <main class="main">
+
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/ahmed-raju-bd/" target="_blank" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://stackoverflow.com/users/12174834/raju-ahmed" target="_blank" class="home__social-icon">
-                            <i class="fa fa-stack-overflow" ></i>
-                        </a>
-                        <a href="https://github.com/AhmadRaju007" target="_blank" class="home__social-icon">
+                        <a href="https://github.com/Reybun" target="_blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
 
                     <div class="home__img">
-
-
-                        <svg class="home__blob_animated" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        preserveAspectRatio="xMidYMid meet">
-                            <g mask="url(#mask)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            </g>
-                        </svg>
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
@@ -133,36 +121,44 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <!-- <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/profilb.png"/> -->
                             </g>
+                            
                         </svg>
+                        <div style="grid-column: 1;grid-row: 1;z-index: 3;margin-top: 100px;">
+                        <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_WdTEui.json"  
+                            background="transparent"  speed="1"  class="lottie-animation"  loop  autoplay>
+                        </lottie-player></div>
 
-                        <div class="home__code" markdown=1>
-                          <pre class="home__codepre">1  data class <b>Developer</b> ( </pre>
-                          <pre class="home__codepre">2    name: String = <b>Yann Simajchel</b>,</pre>
-                          <pre class="home__codepre">3    age: int = 22,</pre>
-                          <pre class="home__codepre">4    val traits = listOf("Android", "Material Design")</pre>
-                          <pre class="home__codepre">5    var skills : any</pre>
-                          <pre class="home__codepre">6  )</pre>
+                        <div class="home__code">
+                          <pre class="home__codepre"> data class <b>Developer</b> ( </pre>
+                          <pre class="home__codepre">    name: String = <b>Yann Simajchel</b>,</pre>
+                          <pre class="home__codepre">    age: int = <span id="age"></span>,</pre>
+                          <pre class="home__codepre">    val traits = listOf("Android", "Material Design")</pre>
+                          <pre class="home__codepre">    var skills : any</pre>
+                          <pre class="home__codepre"> )</pre>
                         </div>
 
+                        
+
                     </div>
+
+
                     <div class="home__data">
                         <h1 class="home__title">
                             <div class="css-typing">
-                                <span textres = "home_ttl">Welcome!</span>
+                                <span textres = "home_ttl">Yann Simajchel!</span>
                             </div>
                         </h1>
                         <h3 class="home__subtitle">
-                            <span textres = "home_subtitle">Full-Stack Developer</span>
+                            <span textres = "home_subtitle">Développeur Android</span>
                         </h3>
                         <p class="home__description">
                             <span textres = "home_description">
-                                High level experience in web application development and producing quality work.
+                                Pationné par le développement d'applications Android de qualité qui simplifierait la vie de demain.
                             </span>
                         </p>
                         <a href="#contact" class="button button--flex">
-                            <span textres = "home_contact">Contact Me</span>
+                            <span textres = "home_contact">Contactez moi!</span>
                             <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
@@ -173,7 +169,7 @@
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">
                             <span textres = "home_scroll">
-                                Scroll down
+                                Descendre
                             </span>
                         <i class="uil uil-arrow-down homw__scroll-arrow"></i>
                     </a>
@@ -185,12 +181,12 @@
         <section class="about section" id="about">
             <h2 class="section__title">
                 <span textres = "about_ttl">
-                    About Me
+                    A mon propos
                 </span>
             </h2>
             <span class="section__subtitle">
                 <span textres = "about_subtitle">
-                    My introduction
+                    Pour qu'on fasse connaissance
                 </span></span>
                
             <div class="about__container container grid">
@@ -199,30 +195,26 @@
                 <div class="about__data">
                     <p class="about__description">
                         <span textres = "about_description">
-                            Web developer, with extensive knowledge and years of experience, working in web
-                            technologies and Ui/Ux design, delivering quality work.
+                            Développeur francais de <span id="age"></span> ans, j'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, 
+                            je code aussi pour le fun et expérimente avec des petits projets dans mon temps libre.
+                            Je suis intéressé et m'épanouis dans tous les secteurs qui feront partie de l'informatique de demain.
                         </span>
                     </p>
 
                     <div class="about__info">
                         <div >
-                            <span class="about__info-title">02</span>
-                            <span class="about__info-name">Years <br> experience </span>
+                            <span class="about__info-title">2,5</span>
+                            <span class="about__info-name">Années <br> d'experience </span>
                         </div>
 
                         <div>
                             <span class="about__info-title">100+</span>
-                            <span class="about__info-name">Tickets <br> completed </span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">07+</span>
-                            <span class="about__info-name">Completed <br> projects </span>
+                            <span class="about__info-name">Tickets <br> réalisés </span>
                         </div>
                     </div>
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-                            <span textres = "about_resume">Download CV</span><i class="uil uil-download-alt button__icon"></i>
+                            <span textres = "about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -234,80 +226,24 @@
         <section class="skills section" id="skills">
             <h2 class="section__title">
                 <span textres = "skills_ttl">
-                    Skills
+                    Connaissances techniques
                 </span>
             </h2>
             <span class="section__subtitle">
                 <span textres = "skills_subtitle">
-                    My technical level
+                    Testé et éprouvé
                 </span>
             </span>
             <div class="skills__container container grid">
                 <div>
-                    <!--====================== SKILLS 1 =============================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Backend Development</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Laravel</h3>
-                                    <div class="skills__number">80%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__laravel"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PHP</h3>
-                                    <div class="skills__number">80%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__php"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Django</h3>
-                                    <div class="skills__number">60%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__django"></div>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Typescript</h3>
-                                    <div class="skills__number">70%</div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage skills__typescript"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--====================== SKILLS 2 =============================-->
+                    <!--====================== Backend =============================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Frontend Development</h1>
-                                <span class="skills__subtitle">More than 1 year</span>
+                                <h1 class="skills__title">Developpement Serveur</h1>
+                                <span class="skills__subtitle"></span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -316,246 +252,173 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">React.js</h3>
-                                    <div class="skills__number">70%</div>
+                                    <h3 class="skills__name">Node.JS</h3>
                                 </div>
                                 <div class="skills__bar">
-                                    <div class="skills__percentage skills__react"></div>
+                                    <div class="skills__percentage" style="width: 60%;"></div>
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Material UI</h3>
-                                    <div class="skills__number">60%</div>
+                                    <h3 class="skills__name">C# ASP.NET</h3>
                                 </div>
                                 <div class="skills__bar">
-                                    <div class="skills__percentage skills__material"></div>
+                                    <div class="skills__percentage" style="width: 30%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Spring</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 30%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 30%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"> Google Cloud Platform (GCP)</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--====================== Web =============================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Developpement Web</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Vue.JS</h3>
+                                    <div class="skills__number"></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage"  style="width: 60%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <div class="skills__number"></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 75%;"></div>
                                 </div>
                             </div>
                             
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Javascript</h3>
-                                    <div class="skills__number">80%</div>
+                                    <h3 class="skills__name">PHP</h3>
                                 </div>
                                 <div class="skills__bar">
-                                    <div class="skills__percentage skills__javascript"></div>
+                                    <div class="skills__percentage" style="width: 30%;"></div>
                                 </div>
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Formik</h3>
-                                    <div class="skills__number">60%</div>
+                                    <h3 class="skills__name">HTML</h3>
                                 </div>
                                 <div class="skills__bar">
-                                    <div class="skills__percentage skills__formik"></div>
+                                    <div class="skills__percentage" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS + Bootstrap</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 65%;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <!--====================== SKILLS 3 =============================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Database Design</h1>
-                                    <span class="skills__subtitle">More than 2 years</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <div class="skills__number">80%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__mysql"></div>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Graphql</h3>
-                                        <div class="skills__number">70%</div>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <div class="skills__percentage skills__graphql"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualifications</h2>
-            <div class="section__subtitle">My personal journey</div>
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--===============================QUALIFICATION 1 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Expertise Ingénierie Logiciel</h3>
-                                <span class="qualification__subtitle">
-                                    Titre certifié niveau 7  <br>Inscrit RNCP <br>
-                                    IN'TECH du groupe ESIEA</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Mars, 2021 - Obtention Mars, 2023
-                                </div>
-                            </div>
+                    <!--====================== Android =============================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                                <h1 class="skills__title">Developpement Android</h1>
+                                <span class="skills__subtitle">Plus de 2 ans</span>
                             </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                        <!--===============================QUALIFICATION 2 ===========================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kotlin</h3>
+                                    <div class="skills__number"></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 90%;"></div>
+                                </div>
                             </div>
-
-                            <div>
-                                <h3 class="qualification__title">Bachelor en développement logiciel</h3>
-                                <span class="qualification__subtitle">IN'TECH du groupe ESIEA</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Mars, 2018 - Mars, 2021
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SDK Android</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Gradle</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Room + SQLite</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 85%;"></div>
                                 </div>
                             </div>
 
-
                         </div>
-
-                        <!--===============================QUALIFICATION 3 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">
-                                    <span textres = "qual_ttl">
-                                        Bac Scientifique 
-                                    </span>
-                                </h3>
-                                <span class="qualification__subtitle">
-                                    <span textres = "qual_subtitle">
-                                        Mention Bien<br>
-                                        Section Européenne Anglais<br>
-                                        Lycée Saint-Joseph de la Salle Auxerre
-                                    </span>
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    <span textres = "qual_date">
-                                        2017
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--===============================QUALIFICATION 1 ===========================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Développeur Android</h3>
-                                <span class="qualification__subtitle">
-                                    <a href="https://fieldproapp.com/about" target="_blank">Optimetriks</a>
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Aout, 2020 - Février, 2023
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--===============================QUALIFICATION 2 ===========================
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">
-
-                                    <a class="qualification__tech" href="https://bohubrihi.com/course-pages/php-web-development/" target="_blank">PHP</a>
-                                    &
-                                    <a class="qualification__tech" href="https://bohubrihi.com/course-pages/laravel/" target="_blank">Laravel</a>
-                                    Instructor
-                                </h3>
-                                <span class="qualification__subtitle">
-                                    <a href="https://bohubrihi.com/" target="_blank">Bohubrihi Online Courses</a>
-                                </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    October, 2020 - running
-                                </div>
-                            </div>
-                        </div>
-                        -->         
-                        
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="absolute above">
-            <div class="parallax-container" style="grid-template-columns: repeat(8, 1fr)">
-                <div class="parallax bg rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
-                    data-rellax-tablet-speed="3" style="transform: rotate(45deg);margin-top: 50%;" >
-                </div>
-                <div class="parallax md rellax" data-rellax-speed="5" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
-                    style="transform: rotate(45deg);margin-top: 355%;background: var(--first-color-second);" >
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="parallax md-alt rellax" data-rellax-speed="7" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
-                    style="transform: rotate(45deg);margin-top: 540%;background: var(--first-color-second);opacity: .6;" >
-                </div>
-            </div>
-        </div>
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
@@ -863,10 +726,9 @@
             </div>
         </section>
 
-
         <div class="absolute above">
             <div class="parallax-container">
-             <div class="parallax md-alt rellax" data-rellax-speed="4" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
+                <div class="parallax md-alt rellax" data-rellax-speed="4" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
                 style="transform: rotate(45deg);margin-top: 140%;background: var(--first-color-second);" >
             </div>
             <div></div>
@@ -877,10 +739,195 @@
             </div>
         </div>
         </div>
-        
+
+        <!--==================== ANDROID ====================-->
+        <section class="section" >
+            <h2 class="section__title">Spécialisation Android</h2>
+            <span class="section__subtitle">Mobile first!</span>
+
+
+         
+            <div class="android__container container grid">
+                
+            
+            <div class="smt">
+                <iframe src="index.html" class="phone__frame" width="411px" height="731px" seamless></iframe>
+            </div>
+            
+
+                <div class="about__data" style="display: flex;align-items: baseline;">
+                    <div class="android__column">
+                        <ul>
+                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Architecture MVVM, MVI</h3></li>
+                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Material Design, XML</h3></li>
+                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Jetpack Compose</h3></li>
+                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Coroutines, Flow, LiveData</h3></li>
+                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>SQLite, Firebase</h3></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualifications</h2>
+            <div class="section__subtitle">Mon parcours</div>
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Travail
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--===============================QUALIFICATION CONTENT 1 ===========================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Expertise Ingénierie Logiciel</h3>
+                                <span class="qualification__subtitle">
+                                    Titre certifié niveau 7  <br>Inscrit RNCP <br>
+                                    IN'TECH du groupe ESIEA</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Mars, 2021 - Obtention Mars, 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Bachelor en développement logiciel</h3>
+                                <span class="qualification__subtitle">IN'TECH du groupe ESIEA</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Mars, 2018 - Mars, 2021
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!--===============================QUALIFICATION 3 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">
+                                    <span textres = "qual_ttl">
+                                        Bac Scientifique 
+                                    </span>
+                                </h3>
+                                <span class="qualification__subtitle">
+                                    <span textres = "qual_subtitle">
+                                        Mention Bien<br>
+                                        Section Européenne Anglais<br>
+                                        Lycée Saint-Joseph de la Salle Auxerre
+                                    </span>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span textres = "qual_date">
+                                        2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--===============================QUALIFICATION CONTENT 2 ===========================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--===============================QUALIFICATION 1 ===========================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Développeur Android</h3>
+                                <span class="qualification__subtitle">
+                                    <a href="https://fieldproapp.com/about" target="_blank">Optimetriks</a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Aout, 2020 - Février, 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--===============================QUALIFICATION 2 ===========================
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">    </h3>
+                                <span class="qualification__subtitle">
+                                    <a href="" target="_blank"></a>
+                                </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        -->         
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="absolute above">
+            <div class="parallax-container" style="grid-template-columns: repeat(8, 1fr)">
+                <div class="parallax bg rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
+                    data-rellax-tablet-speed="3" style="transform: rotate(45deg);margin-top: 50%;" >
+                </div>
+                
+                
+                <div class="parallax md rellax" data-rellax-speed="2" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
+                    style="transform: rotate(45deg);margin-top: 355%;background: var(--first-color-second);opacity: .8" >
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="parallax md-alt rellax" data-rellax-speed="4" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
+                    style="transform: rotate(45deg);margin-top: 540%;background: var(--first-color-second);opacity: .6;" >
+                </div>
+                <div class="parallax md-alt rellax" data-rellax-speed="7" data-rellax-xs-speed="4" data-rellax-mobile-speed="4"
+                    style="transform: rotate(45deg);margin-top: 540%;background: var(--first-color-second);opacity: .6;" >
+                </div>
+            </div>
+        </div>
         
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
+        <section class="section">
             <h2 class="section__title">Mes projets</h2>
             <span class="section__subtitle">Mes travaux récents</span>
 
@@ -894,7 +941,7 @@
                             <h3 class="portfolio__title">CoroMap</h3>
                             <p class="portfolio__description">
                                 Java, Google Map<br>
-                                CoroMap is an interactive map about the coronavirus.
+                                CoroMap est une carte interactive sur le Coronavirus
                             </p>
                             <a href="https://github.com/Reybun/CoroMap" target="_blank" class="button button--flex button--small portfolio__button">
                                 Github
@@ -954,33 +1001,14 @@
 
         <div class="absolute above">
             <div class="parallax-container" style="grid-template-columns: repeat(8, 1fr)">
-                <div class="parallax bg rellax" data-rellax-speed="2" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
-                    data-rellax-tablet-speed="3" style="transform: rotate(45deg);margin-top: 100%;width: 300px;height: 300px;" >
+                <div class="parallax bg rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
+                    data-rellax-tablet-speed="3" style="transform: rotate(45deg);margin-top: 460%;width: 300px;height: 300px;" >
                 </div>
             </div>
         </div>
 
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project</h2>
-                        <p class="project__description">Contact me now and get a 30% discount on your new project!</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-                    </div>
-
-                    <img src="assets/img/project.png" alt="" class="project__img">
-                </div>
-            </div>
-
-        </section>
-
         <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
+        <section class="section">
             <h2 class="section__title">Recommandations</h2>
             <span class="section__subtitle">Most Recent Work</span>
 
@@ -1033,10 +1061,29 @@
             </div>
         </section>
 
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Une opportunité ou un projet ?</h2>
+                        <p class="project__description">Une opportunité ou un projet parlons en ensemblre.</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project.png" alt="" class="project__img">
+                </div>
+            </div>
+
+        </section>
+
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contacte me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact</h2>
+            <span class="section__subtitle">Rentrons en contact</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -1044,7 +1091,7 @@
                         <i class="uil uil-phone contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Call Me</h3>
+                            <h3 class="contact__title">Téléphone</h3>
                             <span class="contact__subtitle">+33 632766566</span>
                         </div>
                     </div>
@@ -1062,7 +1109,7 @@
                         <i class="uil uil-map-marker contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Location</h3>
+                            <h3 class="contact__title">Localisation</h3>
                             <span class="contact__subtitle">Paris 11</span>
                         </div>
                     </div>
@@ -1076,32 +1123,6 @@
 
         </section>
 
-        <!--==================== ANDROID ====================-->
-        <section class="display section" >
-            <h2 class="section__title">Spécialisation Android</h2>
-            <span class="section__subtitle">Mobile first!</span>
-
-
-         
-            <div class="about__container container grid">
-                
-                <iframe src="frame.html" class="phone__frame" width="411px" height="731px" seamless></iframe>
-
-                <div class="about__data" style="display: flex;align-items: baseline;">
-                    <div class="android__column">
-                        <ul>
-                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Architecture MVVM, MVI</h3></li>
-                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Material Design, XML</h3></li>
-                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Jetpack Compose</h3></li>
-                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Coroutines, Flow, LiveData</h3></li>
-                            <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>SQLite, Firebase</h3></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -1110,7 +1131,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Yann Simajchel</h1>
-                    <span class="footer__subtitle">Full Stack Developer</span>
+                    <span class="footer__subtitle">Developpeur Android</span>
                 </div>
 
                 <ul class="footer__links">
@@ -1128,12 +1149,8 @@
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="https://www.facebook.com/rajuahmad007/" class="footer__social" target="_blank"  class="footer__social">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/aahmad_raju/" target="_blank" class="footer__social" class="footer__social">
-                        <i class="uil uil-instagram"></i>
+                    <a href="https://github.com/Reybun" target="_blank" class="footer__social" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
                     </a>
 
                     <a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="footer__social" class="footer__social">
@@ -1155,8 +1172,8 @@
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!--==================== MAIN JS ====================-->
     <script type="module" src="assets/js/main.js" ></script>
 </body>
-
 </html>

@@ -465,9 +465,13 @@ img{
 /*==================== ABOUT ====================*/
 .about__img{
     width: 200px;
+    height: 400px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+    object-position: center top;
+    object-fit: cover;
+
 }
 
 .about__description{
@@ -885,6 +889,7 @@ img{
 
 .project__img{
     width: 232px;
+    margin-top: -50px;
     justify-self: center;
 }
 

@@ -216,11 +216,11 @@ document.querySelector('#langswitch').addEventListener('click', () => {
 let rellax = new Rellax('.rellax');
 
 //Update age
-let bd = new Date(1999, 1, 20);
+let bd = new Date(1999, 0, 20);
 let diff = new Date(new Date().getTime() - bd.getTime());
 
 const age = diff.getUTCFullYear() - 1970;
 
-document.querySelectorAll('#age').forEach(el => {
+document.querySelectorAll('span[name="age"]').forEach(el => {
     el.textContent = age
 })

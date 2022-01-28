@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +37,7 @@
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i>
-                            <span textres = "nav_skills">Connaissances</span>
+                            <span textres = "nav_skills">Expertise</span>
                         </a>
                     </li>
                     <li class="nav__item">
@@ -50,7 +49,7 @@
                     <li class="nav__item">
                         <a href="#qualification" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i>
-                            <span textres = "nav_portfolio">Qualifications</span>
+                            <span textres = "nav_portfolio">Parcours</span>
                         </a>
                     </li>
                     <li class="nav__item">
@@ -73,7 +72,7 @@
             <div style="display: grid;margin-top: 15px;">
                 <input type="range" class="nav__range"  id="custom-color" min="0" max="360" step="10">
                 <label style="text-align: center;font-size: small;" class="rainbow_text_animated">
-                    couleur
+                    essaye moi
                 </label>
             </div>
             
@@ -106,6 +105,9 @@
                         <a href="https://github.com/Reybun" target="_blank" class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
                         </a>
+                        <a href="https://dev.page/yannsimajchel" target="_blank" class="home__social-icon">
+                            <i class="uil uil-user"></i>
+                        </a>
                     </div>
 
                     <div class="home__img">
@@ -132,7 +134,7 @@
                         <div class="home__code">
                           <pre class="home__codepre"> data class <b>Developer</b> ( </pre>
                           <pre class="home__codepre">    name: String = <b>Yann Simajchel</b>,</pre>
-                          <pre class="home__codepre">    age: int = <span id="age"></span>,</pre>
+                          <pre class="home__codepre">    age: int = <span name="age"></span>,</pre>
                           <pre class="home__codepre">    val traits = listOf("Android", "Material Design")</pre>
                           <pre class="home__codepre">    var skills : any</pre>
                           <pre class="home__codepre"> )</pre>
@@ -154,10 +156,10 @@
                         </h3>
                         <p class="home__description">
                             <span textres = "home_description">
-                                Pationné par le développement d'applications Android de qualité qui simplifierait la vie de demain.
+                                Passionné par le développement d'applications Android de qualité qui simplifieront la vie de demain.
                             </span>
                         </p>
-                        <a href="#contact" class="button button--flex">
+                        <a href="#contact" class="button button--flex pulse-color">
                             <span textres = "home_contact">Contactez moi!</span>
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -181,12 +183,12 @@
         <section class="about section" id="about">
             <h2 class="section__title">
                 <span textres = "about_ttl">
-                    A mon propos
+                    A propos
                 </span>
             </h2>
             <span class="section__subtitle">
                 <span textres = "about_subtitle">
-                    Pour qu'on fasse connaissance
+                    Faisons connaissances
                 </span></span>
                
             <div class="about__container container grid">
@@ -195,11 +197,21 @@
                 <div class="about__data">
                     <p class="about__description">
                         <span textres = "about_description">
-                            Développeur francais de <span id="age"></span> ans, j'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, 
-                            je code aussi pour le fun et expérimente avec des petits projets dans mon temps libre.
+                            Développeur francais de <span name="age"></span> ans, j'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, 
+                            je code aussi pour le fun et expérimente avec des projets dans mon temps libre. J'aime particulièrement la 
+                            <span class="button button--flex button--small button--link services__button">musique</span> 
+                            et le jardinage.
                             Je suis intéressé et m'épanouis dans tous les secteurs qui feront partie de l'informatique de demain.
                         </span>
                     </p>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">You found my playlist</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <iframe src="https://open.spotify.com/embed/playlist/0JijrKO2NngEANw65zb8qX?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
 
                     <div class="about__info">
                         <div >
@@ -226,7 +238,7 @@
         <section class="skills section" id="skills">
             <h2 class="section__title">
                 <span textres = "skills_ttl">
-                    Connaissances techniques
+                    Expertise
                 </span>
             </h2>
             <span class="section__subtitle">
@@ -236,13 +248,71 @@
             </span>
             <div class="skills__container container grid">
                 <div>
+                    <!--====================== Android =============================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Développement Android</h1>
+                                <span class="skills__subtitle">Plus de 2 ans</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Kotlin</h3>
+                                    <div class="skills__number"></div>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SDK Android</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Gradle</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Room + SQLite</h3>
+                                </div>
+                                <div class="skills__bar">
+                                    <div class="skills__percentage" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <!--====================== Backend =============================-->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Developpement Serveur</h1>
+                                <h1 class="skills__title">Développement Serveur</h1>
                                 <span class="skills__subtitle"></span>
                             </div>
 
@@ -303,7 +373,7 @@
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Developpement Web</h1>
+                                <h1 class="skills__title">Développement Web</h1>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -357,65 +427,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--====================== Android =============================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Developpement Android</h1>
-                                <span class="skills__subtitle">Plus de 2 ans</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Kotlin</h3>
-                                    <div class="skills__number"></div>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage" style="width: 90%;"></div>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage" style="width: 70%;"></div>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SDK Android</h3>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Gradle</h3>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage" style="width: 65%;"></div>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Room + SQLite</h3>
-                                </div>
-                                <div class="skills__bar">
-                                    <div class="skills__percentage" style="width: 85%;"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -423,10 +434,10 @@
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
             <h2 class="section__title">Compétences</h2>
-            <span class="section__subtitle">Ce que j'apporte</span>
+            <span class="section__subtitle">Ce qui me caractérise</span>
 
             <h3 class="home__subtitle" style="text-align: center;">
-                <span>Compétences humaines</span>
+                <span>Compétences transverses</span>
             </h3>
 
             <div class="services__container container grid" style="margin-bottom: 4rem;">
@@ -536,7 +547,7 @@
                     </div>
                 </div>
 
-                <!--===================== SERVICES 2 ====================-->
+                <!--===================== SERVICES 4 ====================-->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -686,7 +697,7 @@
                     </div>
                 </div>
 
-                <!--===================== SERVICES 2 ====================-->
+                <!--===================== SERVICES 4 ====================-->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -757,6 +768,7 @@
 
                 <div class="about__data" style="display: flex;align-items: baseline;">
                     <div class="android__column">
+                        Essaye le portfolio en version mobile! 
                         <ul>
                             <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Architecture MVVM, MVI</h3></li>
                             <li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Material Design, XML</h3></li>
@@ -771,18 +783,18 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section" id="qualification">
-            <h2 class="section__title">Qualifications</h2>
+            <h2 class="section__title">Parcours</h2>
             <div class="section__subtitle">Mon parcours</div>
             <div class="qualification__container container">
                 <div class="qualification__tabs">
                     <div class="qualification__button button--flex qualification__active" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
+                        Formation
                     </div>
 
                     <div class="qualification__button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Travail
+                        Expérience professionnel
                     </div>
                 </div>
 
@@ -899,6 +911,12 @@
                         -->         
                         
                     </div>
+
+                    <div class="about__buttons" style="margin-top:50px;">
+                        <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                            <span textres = "about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1010,7 +1028,7 @@
         <!--==================== TESTIMONIAL ====================-->
         <section class="section">
             <h2 class="section__title">Recommandations</h2>
-            <span class="section__subtitle">Most Recent Work</span>
+            <span class="section__subtitle">Powered by LinkedIn</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -1082,7 +1100,7 @@
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact</h2>
-            <span class="section__subtitle">Rentrons en contact</span>
+            <span class="section__subtitle">Appel gratuit depuis mobile et fixe</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -1113,7 +1131,7 @@
                         </div>
                     </div>
 
-                    <a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="button button--flex button--small portfolio__button">
+                    <a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="button button--flex button--small portfolio__button pulse-color">
                         Message me!
                         <i class="uil uil-linkedin button__icon"></i>
                     </a>
@@ -1134,17 +1152,10 @@
                 </div>
 
                 <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
+                    Made by 👋 <br>
+                    Using good old HTML + Js + CSS <br>
+                    With Swiper, Lottie, Rellax<br>
+                    Credits to bedimcode for template idea<br>
                 </ul>
 
                 <div class="footer__socials">
@@ -1154,6 +1165,9 @@
 
                     <a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="footer__social" class="footer__social">
                         <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://dev.page/yannsimajchel" target="_blank" class="home__social-icon">
+                        <i class="uil uil-user"></i>
                     </a>
                 </div>
             </div>

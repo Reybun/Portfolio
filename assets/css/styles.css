@@ -238,6 +238,17 @@ img{
     .android__container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* hide scrollbar but allow scrolling */
+    body {
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
 }
 
 .nav__list{
@@ -987,6 +998,7 @@ img{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    color: #FFF;
 }
 
 .footer__link:hover{
@@ -1482,22 +1494,22 @@ img{
 .box div:nth-child(1){ 
     top: 12%;
     left: 42%;
-    animation: animate 10s linear infinite;
+    animation: squareAnim 10s linear infinite;
 }
 
 .box div:nth-child(2){ 
     top: 70%;
     left: 50%;
-    animation: animate 7s linear infinite;
+    animation: squareAnim 7s linear infinite;
 }
 
 .box div:nth-child(3){ 
     top: 17%;
     left: 6%;
-    animation: animate 9s linear infinite;
+    animation: squareAnim 9s linear infinite;
 }
 
-@keyframes animate {
+@keyframes squareAnim {
     0%{
         transform: scale(0) translateY(0) rotate(0);
         border-color: rgba(0, 0, 0, 0.8);
@@ -1622,4 +1634,22 @@ input[type=range] {
     50% {
         background-position: 100% 0;
     }
+}
+
+/* 
+    PULSE EFFECT 
+*/
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 7px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 7px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 7px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 7px rgba(232, 76, 61, 0);}}
+
+.pulse-color {
+    box-shadow: 0 0 0 0 var(--first-color);
+    -webkit-animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
+    border: none;
 }

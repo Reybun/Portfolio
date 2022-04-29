@@ -60,10 +60,10 @@
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: 3rem;
+        --big-font-size: 2.2rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
+        --h3-font-size: 1.3rem;
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
@@ -1446,7 +1446,7 @@ img{
     border-right: .12em solid var(--first-color);
     white-space: nowrap;
     overflow: hidden;
-    width: 8.5em;
+    width: 11em;
     opacity: 0;
     -webkit-animation: anim-typ 2s steps(40, end), blink .9s step-end infinite alternate;
     animation: anim-typ 2s steps(40, end), blink .9s step-end infinite alternate;

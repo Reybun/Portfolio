@@ -479,7 +479,6 @@ img{
     height: 400px;
     border-radius: .5rem;
     justify-self: center;
-    align-self: center;
     object-position: center top;
     object-fit: cover;
 
@@ -779,6 +778,17 @@ img{
     border-radius: .5rem;
 }
 
+.services__modal-content-large{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    max-height: calc(100vh - 210px);
+    max-width: calc(100vw - 50px);
+    text-align: justify;
+    overflow-y: auto;
+}
+
 .services__modal-service{
     row-gap: 1rem;
 }
@@ -794,13 +804,14 @@ img{
 }
 
 .services__modal-close{
-    position: absolute;
+    float: right;
     top: 1rem;
     right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--first-color);
     cursor: pointer;
 }
+
 .services__modal-icon{
     color: var(--first-color);
     margin-right: var(--mb-0-25);
@@ -1187,8 +1198,9 @@ img{
         justify-content: center;
     }
 
-   
-
+    .services__modal-content-large{
+        max-width: calc(100vw - 100px);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1280,7 +1292,7 @@ img{
         width: 350px;
     }
     .about__description{
-        text-align: initial;
+        text-align: justify;
     }
     .about__buttons{
         justify-content: initial;
@@ -1297,7 +1309,7 @@ img{
     }
 
     .services__container{
-        grid-template-columns: repeat(4, 218px);
+        grid-template-columns: repeat(3, 218px);
         justify-content: center;
     }
     .services__icon{
@@ -1351,6 +1363,10 @@ img{
     .footer__copy{
         margin-top: 4.5rem;
     }
+
+    .services__modal-content-large{
+        max-width: calc(100vw - 100px);
+    }
 }
 
 /* For large devices */
@@ -1390,7 +1406,7 @@ img{
     }
 
     .services__container{
-        grid-template-columns: repeat(4, 238px);
+        grid-template-columns: repeat(3, 238px);
     }
 
     .portfolio__content{
@@ -1437,6 +1453,10 @@ img{
         left: 0px;
         border: 0 none;
         border-radius: 10px;
+    }
+
+    .services__modal-content-large{
+        max-width: calc(100vw - 150px);
     }
 
 

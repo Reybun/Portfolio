@@ -193,7 +193,7 @@ let currentLang = "fr"
 function updateTextLang() {
     document.querySelectorAll('[textres]').forEach(span => {
         const res = span.getAttribute('textres');
-        span.textContent = stringsData[currentLang][res];
+        span.innerHTML = stringsData[currentLang][res];
     });
 }
 
@@ -210,6 +210,7 @@ document.querySelector('#langswitch').addEventListener('click', () => {
             break;
     }
     updateTextLang()
+    updateAge()
 })
 
 
@@ -221,6 +222,11 @@ let diff = new Date(new Date().getTime() - bd.getTime());
 
 const age = diff.getUTCFullYear() - 1970;
 
-document.querySelectorAll('span[name="age"]').forEach(el => {
-    el.textContent = age
-})
+function updateAge() {
+    document.querySelectorAll('span[name="age"]').forEach(el => {
+        el.textContent = age
+    })
+}
+
+updateAge()
+

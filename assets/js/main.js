@@ -191,9 +191,9 @@ colorRange.addEventListener('change', () => {
 let currentLang = "fr"
 
 function updateTextLang() {
-    document.querySelectorAll('[textres]').forEach(span => {
-        const res = span.getAttribute('textres');
-        span.innerHTML = stringsData[currentLang][res];
+    document.querySelectorAll('[textres]').forEach(el => {
+        const res = el.getAttribute('textres');
+        el.innerHTML = stringsData[currentLang][res];
     });
 }
 

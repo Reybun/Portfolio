@@ -62,6 +62,8 @@ export let stringsData = {
 
         //Android
 
+        "android_ttl":"Spécialisation dzzdzdzdzdz",
+        "android_sub":"Essaye le portfolio en version mobile!",
     },
     "fr": {
         //Nav
@@ -71,6 +73,7 @@ export let stringsData = {
         "nav_skills":"Expertise",
         "nav_about":"Présentation",
         "nav_home":"Accueil",
+        "nav_try":"essaye moi",
 
         //Home
         "home_ttl":"Yann Simajchel,",
@@ -84,6 +87,8 @@ export let stringsData = {
         "about_subtitle":"My introduction",
         "about_description":'Développeur de <span name="age"></span style="text-align: justify"> ans, j\'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, je code aussi pour le fun et expérimente avec des projets pendant mon temps libre comme par exemple en créant des thermomètres à écrans LED pour afficher la température et l’humidité de mes plantes. Pendant mon temps libre, j\'aime aussi écouter de la  <span class="button button--flex button--small button--link services__button">musique</span>, jardiner et lire. Mes passions et mon métier laissent libre cours à ma créativité et à mon imagination qui sont des éléments forts de mon identité. Je suis intéressé et m\'épanouis dans tous les secteurs qui feront partie de l\'informatique de demain. Je suis motivé par l\'idée d’améliorer le quotidien des utilisateurs. Je cherche à m’investir pleinement dans des projets qui seront utiles pour le futur en travaillant avec des problématiques liées à la santé ou à la communication.',
         "about_resume":"Download CV",
+        "about_playlist":"Tu as trouvé ma playlist pour développer !",
+    
 
         //Skills
         "skills_ttl":"Expertise",
@@ -103,6 +108,11 @@ export let stringsData = {
 
         //Services
         "services_sub":"Ce qui me caractérise",
+        "services_group1":"Réalisations",
+        "services_group2":"Compétences transverses",
+        "services_group3":"Compétences techniques",
+
+
         //Rush
         "rush_ttl":"V RUSH sur les serveur",
         "rush_1":"Un projet pour se démarquer",
@@ -130,14 +140,58 @@ export let stringsData = {
         
 
 
-        //Portfolio
+        //Mobile spec
 
-        //Testimonial
+        //History
+        "qual_ttl":"Parcours",
+        "qual_sub":"Mon parcours",
+        "qual_cat1":"Formation",
+        "qual_cat2":"Expérience professionnel",
+
+        //intech
+        "qual_intech_ttl":"Expertise Ingénierie Logiciel",
+        "qual_intech_sub":"Titre certifié niveau 7 <br>Inscrit RNCP<br> IN'TECH du groupe ESIEA",
+        "qual_intech_date":"Mars, 2021 - Obtention Mars, 2023",
+
+        //intech bachelor
+        "qual_intech_bachelor_ttl":"Bachelor en développement logiciel",
+        "qual_intech_bachelor_sub":"IN'TECH du groupe ESIEA",
+        "qual_intech_bachelor_date":"Mars, 2018 - Mars, 2021",
+
+        //bac
+        "qual_bac_ttl":"Bac Scientifique ",
+        "qual_bac_sub":"Mention Bien<br>Section Européenne Anglais<br>Lycée Saint-Joseph de la Salle Auxerre",
+
+        //optimetriks
+        "qual_opti_ttl":"Développeur Android",
+        "qual_opti_date":"Aout, 2020 - Février, 2023",
+
+        //project
+        "project_ttl":"Mes projets",
+        "project_sub":"Mes travaux récents",
+
+        "project_music_desc":"Kotlin<br>Simple music player that I did to work on analysing and displaying some animation related to the music.",
+        "project_coromap_desc":"Java, API Google Map<br>CoroMap est une carte interactive sur le Coronavirus",
+        "project_metronome_desc":"VUE.JS, C#<br>Simple web application that shows the subways in Paris and the schedule.",
+        "project_portfolio_desc":"Kotlin, Jetpack Compose<br>Mon application android portfolio",
+
+        //testimonials
+        "testimonial_ttl":"Recommandations",
+
+        //Opportunity
+        "opportunity_ttl":"Une opportunité ou un projet ?",
+        "opportunity_sub":"Une opportunité ou un projet parlons en ensemble.",
+        "contact_bt":"Contactez moi",
 
         //Contact me
-
+        "contact_ttl":"Pour me contacter",
+        "contact_sub":"Appel gratuit depuis mobile et fixe",
+        "contact_phone":"Téléphone",
+        "contact_place":"Localisation",
+        "contact_send":"Envoyez moi un message !",
 
         //Android
-
+        "android_ttl":"Spécialisation Android",
+        "android_sub":"Essaye le portfolio en version mobile!",
     }
 }

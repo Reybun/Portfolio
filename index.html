@@ -72,7 +72,7 @@
 			<div style="display: grid;margin-top: 15px;">
 				<input type="range" class="nav__range"  id="custom-color" min="0" max="360" step="10">
 				<label style="text-align: center;font-size: small;" class="rainbow_text_animated">
-					essaye moi
+					<span textres = "nav_try">essaye moi</span>
 				</label>
 			</div>
 			
@@ -94,7 +94,7 @@
 <!--==================== MAIN ====================-->
 	<main class="main">
 
-		<!--==================== HOME ====================-->
+		<!--==================== HOME = Translated ====================-->
 		<section class="home section" id="home">
 			<div class="home__container container grid">
 				<div class="home__content grid">
@@ -179,7 +179,7 @@
 			</div>
 		</section>
 
-		<!--==================== ABOUT ====================-->
+		<!--==================== ABOUT = Translated ====================-->
 		<section class="about section" id="about">
 			<h2 class="section__title">
 				<span textres = "about_ttl">
@@ -211,7 +211,11 @@
 					<div class="services__modal">
 						<div class="services__modal-content">
 							<i class="uil uil-times services__modal-close"></i>
-							<h4 class="services__modal-title">You found my work playlist</h4>
+							<h4 class="services__modal-title">
+								<span textres = "about_playlist">
+									Tu as trouvé ma playlist pour développer !
+								</span>
+							</h4>
 							<iframe src="https://open.spotify.com/embed/playlist/0JijrKO2NngEANw65zb8qX?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 						</div>
 					</div>
@@ -230,7 +234,7 @@
 					-->
 					<div class="about__buttons">
 						<a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-							<span textres = "about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
+							<span textres="about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
 						</a>
 					</div>
 				</div>
@@ -238,15 +242,15 @@
 
 		</section>
 
-		<!--==================== SKILLS ====================-->
+		<!--==================== SKILLS = Translated ====================-->
 		<section class="skills section" id="skills">
 			<h2 class="section__title">
-				<span textres = "skills_ttl">
+				<span textres="skills_ttl">
 					Expertise
 				</span>
 			</h2>
 			<span class="section__subtitle">
-				<span textres = "skills_subtitle">
+				<span textres="skills_subtitle">
 					Testé et éprouvé
 				</span>
 			</span>
@@ -259,12 +263,12 @@
 
 							<div>
 								<h1 class="skills__title">                
-									<span textres = "skills_android_ttl">
+									<span textres="skills_android_ttl">
 										Développement android
 									</span>
 								</h1>
 								<span class="skills__subtitle">
-									<span textres = "skills_android_sub">
+									<span textres="skills_android_sub">
 										Plus de 2 ans
 									</span>
 								</span>
@@ -460,7 +464,7 @@
 			</div>
 		</section>
 
-		<!--==================== SERVICES ====================-->
+		<!--==================== SERVICES = WIP ====================-->
 		<section class="services section" id="services">
 			<h2 class="section__title">
 				<span textres = "nav_skills">
@@ -473,7 +477,7 @@
 				</span>
 			</span>
 			<h3 class="home__subtitle" style="text-align: center;">
-				<span>Réalisations</span>
+				<span textres="services_group1">Réalisations</span>
 			</h3>
 
 			<div class="services__container container grid" style="margin-bottom: 4rem;">
@@ -772,7 +776,7 @@
 			</div>
 
 			<h3 class="home__subtitle" style="text-align: center">
-				<span>Compétences transverses</span>
+				<span textres="services_group2">Compétences transverses</span>
 			</h3>
 
 			<div class="services__container container grid" style="margin-bottom: 4rem;">
@@ -888,7 +892,7 @@
 			</div>
 
 			<h3 class="home__subtitle" style="text-align: center;">
-				<span>Compétences techniques</span>
+				<span textres="services_group3">Compétences techniques</span>
 			</h3>
 
 			<div class="services__container container grid">
@@ -1047,49 +1051,50 @@
 		</div>
 		</div>
 
-		<!--==================== ANDROID ====================-->
+		<!--==================== ANDROID = Translated ====================-->
 		<section class="section" >
-			<h2 class="section__title">Spécialisation Android</h2>
-			<span class="section__subtitle">
+			<h2 class="section__title" textres="android_ttl">Spécialisation Android</h2>
+			<span class="section__subtitle" textres="android_sub">
 				Essaye le portfolio en version mobile! 
 			</span>
 
 
 		 
 			<div class="android__container container grid">
-				
+				<div class="smt">
+					<iframe src="index.html" class="phone__frame" width="411px" height="731px" seamless></iframe>
+				</div>
 			
-			<div class="smt">
-				<iframe src="index.html" class="phone__frame" width="411px" height="731px" seamless></iframe>
-			</div>
-			
-
 				<div class="about__data" style="display: flex;align-items: baseline;">
-						<ul>
-							<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Architecture MVVM, MVI</h3></li>
-							<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Material Design, XML</h3></li>
-							<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Jetpack Compose</h3></li>
-							<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Coroutines, Flow, LiveData</h3></li>
-							<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>SQLite, Firebase, Room, Retrofit, Koin</h3></li>
-						</ul>
-					</div>
+					<ul>
+						<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Architecture MVVM, MVI</h3></li>
+						<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Material Design, XML</h3></li>
+						<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Jetpack Compose</h3></li>
+						<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>Coroutines, Flow, LiveData</h3></li>
+						<li class="android__li"><h3 class="android__item"><i class="uil uil-check-circle services__modal-icon"></i>SQLite, Firebase, Room, Retrofit, Koin</h3></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
-		<!--==================== QUALIFICATION ====================-->
+		<!--==================== QUALIFICATION = Translated ====================-->
 		<section class="qualification section" id="qualification">
-			<h2 class="section__title">Parcours</h2>
-			<div class="section__subtitle">Mon parcours</div>
+			<h2 class="section__title" textres="qual_ttl">Parcours</h2>
+			<div class="section__subtitle" textres="qual_sub">Mon parcours</div>
 			<div class="qualification__container container">
 				<div class="qualification__tabs">
 					<div class="qualification__button button--flex qualification__active" data-target="#education">
 						<i class="uil uil-graduation-cap qualification__icon"></i>
-						Formation
+						<span textres="qual_cat1">
+							Formation	
+						</span>
 					</div>
 
 					<div class="qualification__button button--flex" data-target="#work">
 						<i class="uil uil-briefcase-alt qualification__icon"></i>
-						Expérience professionnel
+						<span textres="qual_cat2">
+							Expérience professionnel
+						</span> 
 					</div>
 				</div>
 
@@ -1099,13 +1104,17 @@
 						<!--===============================QUALIFICATION 1 ===========================-->
 						<div class="qualification__data">
 							<div>
-								<h3 class="qualification__title">Expertise Ingénierie Logiciel</h3>
-								<span class="qualification__subtitle">
-									Titre certifié niveau 7  <br>Inscrit RNCP <br>
-									IN'TECH du groupe ESIEA</span>
+								<h3 class="qualification__title" textres="qual_intech_ttl">Expertise Ingénierie Logiciel</h3>
+								<span class="qualification__subtitle" textres="qual_intech_sub">
+									Titre certifié niveau 7
+									<br>Inscrit RNCP<br>
+									IN'TECH du groupe ESIEA
+								</span>
 								<div class="qualification__calendar">
 									<i class="uil uil-calendar-alt"></i>
-									Mars, 2021 - Obtention Mars, 2023
+									<span textres="qual_intech_date">
+										Mars, 2021 - Obtention Mars, 2023
+									</span>		
 								</div>
 							</div>
 
@@ -1124,11 +1133,15 @@
 							</div>
 
 							<div>
-								<h3 class="qualification__title">Bachelor en développement logiciel</h3>
-								<span class="qualification__subtitle">IN'TECH du groupe ESIEA</span>
+								<h3 class="qualification__title" textres="qual_intech_bachelor_ttl">Bachelor en développement logiciel</h3>
+								<span class="qualification__subtitle" textres="qual_intech_bachelor_sub">
+									IN'TECH du groupe ESIEA
+								</span>
 								<div class="qualification__calendar">
 									<i class="uil uil-calendar-alt"></i>
-									Mars, 2018 - Mars, 2021
+									<span textres="qual_intech_bachelor_date">
+										Mars, 2018 - Mars, 2021
+									</span>	
 								</div>
 							</div>
 
@@ -1139,12 +1152,12 @@
 						<div class="qualification__data">
 							<div>
 								<h3 class="qualification__title">
-									<span textres = "qual_ttl">
+									<span textres="qual_bac_ttl">
 										Bac Scientifique 
 									</span>
 								</h3>
 								<span class="qualification__subtitle">
-									<span textres = "qual_subtitle">
+									<span textres="qual_bac_sub">
 										Mention Bien<br>
 										Section Européenne Anglais<br>
 										Lycée Saint-Joseph de la Salle Auxerre
@@ -1152,7 +1165,7 @@
 								</span>
 								<div class="qualification__calendar">
 									<i class="uil uil-calendar-alt"></i>
-									<span textres = "qual_date">
+									<span textres="qual_bac_date">
 										2017
 									</span>
 								</div>
@@ -1169,13 +1182,15 @@
 						<!--===============================QUALIFICATION 1 ===========================-->
 						<div class="qualification__data">
 							<div>
-								<h3 class="qualification__title">Développeur Android</h3>
+								<h3 class="qualification__title" textres="qual_opti_ttl">Développeur Android</h3>
 								<span class="qualification__subtitle">
 									<a href="https://fieldproapp.com/about" target="_blank">Optimetriks</a>
 								</span>
 								<div class="qualification__calendar">
 									<i class="uil uil-calendar-alt"></i>
-									Aout, 2020 - Février, 2023
+									<span textres="qual_opti_date">
+										Aout, 2020 - Février, 2023
+									</span>
 								</div>
 							</div>
 
@@ -1209,7 +1224,7 @@
 
 					<div class="about__buttons" style="margin-top:50px;">
 						<a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-							<span textres = "about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
+							<span textres="about_resume">Télécharge mon CV</span><i class="uil uil-download-alt button__icon"></i>
 						</a>
 					</div>
 				</div>
@@ -1239,21 +1254,21 @@
 			</div>
 		</div>
 		
-		<!--==================== PORTFOLIO ====================-->
+		<!--==================== PORTFOLIO = Translated ====================-->
 		<section class="section">
-			<h2 class="section__title">Mes projets</h2>
-			<span class="section__subtitle">Mes travaux récents</span>
+			<h2 class="section__title" textres="project_ttl">Mes projets</h2>
+			<span class="section__subtitle" textres="project_sub">Mes travaux récents</span>
 
 			<div class="portfolio__container container swiper-container">
 				<div class="swiper-wrapper">
-					<!--======================== PORTFOLIO 1 =============-->
+					<!--======================== Coromap =============-->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="https://camo.githubusercontent.com/eb4f696955b3b0fd5b8b3178962ff14eaffe4aa7936f67e4d6b3f844fab37595/68747470733a2f2f692e6962622e636f2f62764e4b3442502f696d6167652e706e67" alt="" class="portfolio__img">
 
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">CoroMap</h3>
-							<p class="portfolio__description">
-								Java, Google Map<br>
+							<p class="portfolio__description" textres="project_coromap_desc">
+								Java, API Google Map<br>
 								CoroMap est une carte interactive sur le Coronavirus
 							</p>
 							<a href="https://github.com/Reybun/CoroMap" target="_blank" class="button button--flex button--small portfolio__button">
@@ -1263,13 +1278,13 @@
 						</div>
 					</div>
 
-					<!--======================== PORTFOLIO 2 =============-->
+					<!--======================== Music =============-->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="https://camo.githubusercontent.com/7fbacee18153935c3266beff4ece9e651a8dea9852871fca33b049273e95fb0c/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f356964463447646b413334706c384c5170532f67697068792e6769663f6369643d373930623736313133336239323663663765393931313236333230653239663366616464626264616234306335396237267269643d67697068792e676966" alt="" class="portfolio__img">
 
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Music Player</h3>
-							<p class="portfolio__description">
+							<p class="portfolio__description" textres="project_music_desc">
 								Kotlin<br>
 								Simple music player that I did to work on analysing and displaying some animation related to the music.
 							</p>
@@ -1280,15 +1295,32 @@
 						</div>
 					</div>
 
-					<!--======================== PORTFOLIO 3 =============-->
+					<!--======================== Metronome =============-->
 					<div class="portfolio__content grid swiper-slide">
 						<img src="https://user-images.githubusercontent.com/44272999/147484939-e23f7c16-1302-49c2-8973-22e38eb76070.png" alt="" class="portfolio__img">
 
 						<div class="portfolio__data">
 							<h3 class="portfolio__title">Metronome</h3>
-							<p class="portfolio__description">
+							<p class="portfolio__description" textres="project_metronome_desc">
 								VUE.JS, C#<br>
 								Simple web application that shows the subways in Paris and the schedule.
+							</p>
+							<a href="https://github.com/uxmaker/__METRONOME__" target="_blank" class="button button--flex button--small portfolio__button">
+								Github
+								<i class="uil uil-github button__icon"></i>
+							</a>
+						</div>
+					</div>
+
+					<!--======================== Portfolio app =============-->
+					<div class="portfolio__content grid swiper-slide">
+						<img src="https://user-images.githubusercontent.com/44272999/147484939-e23f7c16-1302-49c2-8973-22e38eb76070.png" alt="" class="portfolio__img">
+
+						<div class="portfolio__data">
+							<h3 class="portfolio__title">Portfolio</h3>
+							<p class="portfolio__description" textres="project_portfolio_desc">
+								Kotlin, Jetpack Compose<br>
+								Mon application android portfolio
 							</p>
 							<a href="https://github.com/uxmaker/__METRONOME__" target="_blank" class="button button--flex button--small portfolio__button">
 								Github
@@ -1312,6 +1344,7 @@
 		</section>
 
 
+		<!--parallax anim-->
 		<div class="absolute above">
 			<div class="parallax-container" style="grid-template-columns: repeat(8, 1fr)">
 				<div class="parallax bg rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
@@ -1320,9 +1353,9 @@
 			</div>
 		</div>
 
-		<!--==================== TESTIMONIAL ====================-->
+		<!--==================== TESTIMONIAL = Translated ====================-->
 		<section class="section">
-			<h2 class="section__title">Recommandations</h2>
+			<h2 class="section__title" textres="testimonial_ttl">Recommandations</h2>
 			<span class="section__subtitle">Powered by LinkedIn</span>
 
 			<div class="portfolio__container container swiper-container">
@@ -1397,10 +1430,12 @@ Yann a notamment contribué à la réalisation et à la maintenance de notre app
 			<div class="project__bg">
 				<div class="project__container container grid">
 					<div class="project__data">
-						<h2 class="project__title">Une opportunité ou un projet ?</h2>
-						<p class="project__description">Une opportunité ou un projet parlons en ensemblre.</p>
+						<h2 class="project__title" textres="opportunity_ttl">Une opportunité ou un projet ?</h2>
+						<p class="project__description" textres="opportunity_sub">Une opportunité ou un projet parlons en ensemble.</p>
 						<a href="#contact" class="button button--flex button--white">
-							Contact Me
+							<span textres="contact_bt">
+								Contactez moi
+							</span>
 							<i class="uil uil-message project__icon button__icon"></i>
 						</a>
 					</div>
@@ -1410,10 +1445,10 @@ Yann a notamment contribué à la réalisation et à la maintenance de notre app
 
 		</section>
 
-		<!--==================== CONTACT ME ====================-->
+		<!--==================== CONTACT ME = Translated ====================-->
 		<section class="contact section" id="contact">
-			<h2 class="section__title">Contact</h2>
-			<span class="section__subtitle">Appel gratuit depuis mobile et fixe</span>
+			<h2 class="section__title" textres="contact_ttl">Pour me contacter</h2>
+			<span class="section__subtitle" textres="contact_sub">Appel gratuit depuis mobile et fixe</span>
 
 			<div class="contact__container container grid">
 				<div>
@@ -1421,7 +1456,7 @@ Yann a notamment contribué à la réalisation et à la maintenance de notre app
 						<i class="uil uil-phone contact__icon"></i>
 
 						<div>
-							<h3 class="contact__title">Téléphone</h3>
+							<h3 class="contact__title" textres="contact_phone">Téléphone</h3>
 							<span class="contact__subtitle">+33 632766566</span>
 						</div>
 					</div>
@@ -1439,13 +1474,15 @@ Yann a notamment contribué à la réalisation et à la maintenance de notre app
 						<i class="uil uil-map-marker contact__icon"></i>
 
 						<div>
-							<h3 class="contact__title">Localisation</h3>
+							<h3 class="contact__title" textres="contact_place">Localisation</h3>
 							<span class="contact__subtitle">Paris 11</span>
 						</div>
 					</div>
 
 					<a href="https://www.linkedin.com/in/yann-simajchel/" target="_blank" class="button button--flex button--small portfolio__button pulse-color">
-						Message me!
+						<span textres="contact_send">
+							Envoyez moi un message !
+						</span> 
 						<i class="uil uil-linkedin button__icon"></i>
 					</a>
 				</div>
@@ -1465,9 +1502,9 @@ Yann a notamment contribué à la réalisation et à la maintenance de notre app
 				</div>
 
 				<ul class="footer__links">
-					Made by 👋 <br>
+					Made by 👋 by me, <br>
 					Using good old HTML + Js + CSS <br>
-					With Swiper, Lottie, Rellax<br>
+					also used Swiper, Lottie, Rellax<br>
 					Credits to bedimcode for template idea<br>
 				</ul>
 

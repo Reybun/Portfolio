@@ -61,7 +61,7 @@
 				</ul>
 				<i class="uil uil-times nav__close" id="nav-close"></i>
 			</div>
-
+			
 			<!--Theme change button-->
 			<i class="uil uil-moon change-theme" id="theme-button"></i>
 
@@ -76,7 +76,10 @@
 				</label>
 			</div>
 			
-			<img id="langswitch" src="assets/img/fr.png" width="20px" height="20px">
+			<span class="nav__link" id="langswitch"  style="cursor: pointer;flex-direction: row;" >
+				<img id="langswitch_img" src="assets/img/fr.png" width="20px" height="20px">
+				<span textres = "nav_lang" style="margin-left: 6px;">Francais</span> 
+			</span>
 
 		</nav>
 	</header>
@@ -136,7 +139,7 @@
 						  <pre class="home__codepre">    name: String = <b>Yann Simajchel</b>,</pre>
 						  <pre class="home__codepre">    age: int = <span name="age"></span>,</pre>
 						  <pre class="home__codepre">    val traits = listOf("Android", "Web", "Server")</pre>
-						  <pre class="home__codepre">    var skills = code..designÎÎ</pre>
+						  <pre class="home__codepre">    var skills = code..design</pre>
 						  <pre class="home__codepre"> )</pre>
 						</div>
 
@@ -160,7 +163,7 @@
 							</span>
 						</p>
 						<a href="#contact" class="button button--flex pulse-color">
-							<span textres = "home_contact">Contactez moi!</span>
+							<span textres = "contact_bt">Contactez moi</span>
 							<i class="uil uil-message button__icon"></i>
 						</a>
 					</div>
@@ -1061,8 +1064,8 @@
 
 		 
 			<div class="android__container container grid">
-				<div class="smt">
-					<iframe src="index.html" class="phone__frame" width="411px" height="731px" seamless></iframe>
+				<div class="phone_preview">
+					<iframe src="index.html" class="phone__frame" width="440px" height="731px" seamless></iframe>
 				</div>
 			
 				<div class="about__data" style="display: flex;align-items: baseline;">
@@ -1165,9 +1168,7 @@
 								</span>
 								<div class="qualification__calendar">
 									<i class="uil uil-calendar-alt"></i>
-									<span textres="qual_bac_date">
 										2017
-									</span>
 								</div>
 							</div>
 

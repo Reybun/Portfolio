@@ -227,12 +227,16 @@ img{
         transition: .3s;
     }
 
+    input[type=range] {
+        width: 90px;
+    }
+
     .lottie-animation{
         width: 300px;
         height: 300px;
     }
 
-    .smt{
+    .phone_preview{
         display: none;
     }
     .android__container{
@@ -1266,8 +1270,7 @@ img{
         grid-row: 1;
         z-index: 1;
     }
-    
-    
+       
     .home__blob_animated{
         width: 270px;
         transform: scaleY(-1);
@@ -1303,9 +1306,6 @@ img{
     }
     .qualification__button{
         margin: 0 var(--mb-1);
-    }
-    .qualification__sections{
-        grid-template-columns: .5fr;
     }
 
     .services__container{
@@ -1428,8 +1428,6 @@ img{
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 
     .phone {
         height: 750px;
@@ -1557,24 +1555,24 @@ input[type=range] {
     background-color: transparent;
     border-radius: 5px;
     -webkit-appearance: none;
-  }
-  input[type=range]:focus {
+}
+input[type=range]:focus {
     outline: none;
-  }
-  input[type=range]::-webkit-slider-runnable-track {
+}
+input[type=range]::-webkit-slider-runnable-track {
     background: var(--first-color-lighter);
     border-radius: 15px;
-  }
-  input[type=range]::-webkit-slider-thumb {
+}
+input[type=range]::-webkit-slider-thumb {
     width: 8px;
     height: 8px;
     background: var(--first-color-alt);
     border-radius: 10px;
     -webkit-appearance: none;
-  }
-  input[type=range]:focus::-webkit-slider-runnable-track {
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
     background: var(--first-color-lighter);
-  }
+}
 
 /*RELAX*/
 
@@ -1628,12 +1626,12 @@ input[type=range] {
     border-style:solid;
     border: 16px black solid;
     border-radius: 36px;
-    border-top-width: 40px;
-    border-bottom-width: 40px;
+    border-top-width: 45px;
+    border-bottom-width: 45px;
     background-clip: content-box;
 }
 
-.smt{
+.phone_preview{
     position: relative;
 }
 

@@ -199,8 +199,7 @@ function updateTextLang() {
 
 //updateTextLang()
 
-document.querySelector('#langswitch').addEventListener('click', () => {
-    document.querySelector('#langswitch').src=`assets/img/${currentLang}.png`
+document.querySelector('#langswitch_img, #langswitch').addEventListener('click', () => {
     switch (currentLang) {
         case "fr":
             currentLang = "eng"
@@ -209,9 +208,12 @@ document.querySelector('#langswitch').addEventListener('click', () => {
             currentLang = "fr"
             break;
     }
+    document.querySelector('#langswitch_img').src=`assets/img/${currentLang}.png`
     updateTextLang()
     updateAge()
 })
+
+
 
 
 let rellax = new Rellax('.rellax');

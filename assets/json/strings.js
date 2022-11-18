@@ -157,7 +157,7 @@ export let stringsData = {
 
 
         //Rush
-        "rush_ttl":"V RUSH sur les serveur",
+        "rush_ttl":"RUSH sur les serveur",
         "rush_1":"Un projet pour se démarquer",
         "rush_2":"C’est au cours du semestre 5 de ma formation en développement logiciel, qu’il m’a été demandé de réaliser un projet en lien avec la thématique du semestre. Au cours de ma formation, chaque semestre, les projets ont été pour moi l’opportunité de faire la découverte de nouvelles techniques et de me challenger sur des thématiques qui m'intéressent. Ce semestre l’a été tout particulièrement, celui-ci étant le dernier avant la réalisation de mon stage. C’est donc un projet qui m’a permis de me démarquer auprès des entreprises.",
         "rush_3":"Plutôt prévenir que guérir",

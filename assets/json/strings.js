@@ -9,6 +9,7 @@ export let stringsData = {
         "nav_home":"Home",
         "nav_try":"try me",
         "nav_lang":"English",
+        
 
         //Home
         "home_ttl":"Android Developer,",

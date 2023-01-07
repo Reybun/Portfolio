@@ -79,6 +79,7 @@ const modalViews = document.querySelectorAll('.services__modal'),
 
 let modal = function (modalClick){
     modalViews[modalClick].classList.add('active-modal');
+    onOpenModal();
 };
 
 modalBtns.forEach((modalBtn, i)=>{
@@ -92,6 +93,7 @@ modalCloses.forEach(modalClose => {
         modalViews.forEach((modalView) =>{
             modalView.classList.remove('active-modal');
         });
+        onCloseModal();
     });
 });
 
@@ -232,3 +234,15 @@ function updateAge() {
 
 updateAge()
 
+
+function onOpenModal() {
+    const body = document.querySelector('body');
+    body.style.overflow='hidden';
+    body.style.scrollBehavior= 'unset';
+}
+
+function onCloseModal() {
+    const body = document.querySelector('body');
+    body.style.overflow= 'auto';
+    body.style.scrollBehavior= 'auto';
+}

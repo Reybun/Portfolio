@@ -785,7 +785,10 @@ img{
 .services__modal-content-large{
     position: relative;
     background-color: var(--container-color);
-    padding: 1.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-radius: .5rem;
     max-height: calc(100vh - 210px);
     max-width: calc(100vw - 50px);
@@ -1559,9 +1562,21 @@ input[type=range] {
 input[type=range]:focus {
     outline: none;
 }
+input[type=range]::-moz-range-track {
+    background: var(--first-color-lighter);
+    border-radius: 15px;
+}
 input[type=range]::-webkit-slider-runnable-track {
     background: var(--first-color-lighter);
     border-radius: 15px;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    background: var(--first-color-alt);
+    border-radius: 10px;
+    -webkit-appearance: none;
 }
 input[type=range]::-webkit-slider-thumb {
     width: 8px;
@@ -1569,6 +1584,10 @@ input[type=range]::-webkit-slider-thumb {
     background: var(--first-color-alt);
     border-radius: 10px;
     -webkit-appearance: none;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: var(--first-color-lighter);
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: var(--first-color-lighter);
@@ -1670,4 +1689,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     -ms-animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
     animation: pulse 1.55s infinite cubic-bezier(0.66, 0, 0, 1);
     border: none;
+}
+
+.services__modal-close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+.services__modal-content-large .services__modal-close {
+    top: calc(75px + 2rem);
+    right: calc(75px + 2rem);
 }

@@ -246,3 +246,15 @@ function onCloseModal() {
     body.style.overflow= 'auto';
     body.style.scrollBehavior= 'auto';
 }
+
+function addButtonToTop() {
+    const body = document.querySelector('body');
+    const button = document.createElement('button');
+    button.classList.add('toTopButton','uil-arrow-up');
+    button.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+    body.appendChild(button);
+}
+
+addButtonToTop()

@@ -1701,3 +1701,18 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     top: calc(75px + 2rem);
     right: calc(75px + 2rem);
 }
+
+.toTopButton {
+    position: fixed;
+    border: 0;
+    width: 24px;
+    height: 24px;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: var(--first-color);
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+  }

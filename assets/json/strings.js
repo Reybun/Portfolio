@@ -20,7 +20,7 @@ export let stringsData = {
         //About
         "about_ttl":"About Me",
         "about_subtitle":"My introduction",
-        "about_description":'Thriving on challenge, I am a <span name="age"></span style="text-align: justify"> years old developer, who loves  learning and working with new technologies and especially with Android. Always looking for the best code possible, I also code for fun and experiment with projects in my free time such as  creating LED thermometers to display the temperature and humidity of my plants. In my free time, I also enjoy listening to <span class="button button--flex button--small button--link services__button">music</span>, gardening and reading. My passions and my job give free rein to my creativity and imagination which are strong elements of my identity. I am interested in and totally immersed in all areas that will be part of tomorrow\'s IT. I am driven by the idea of improving the daily life of users. Looking to invest myself fully in projects that will be useful for the future, I am ready to solve  issues in wide and varied fields such as health and communication.',
+        "about_description":'Thriving on challenge, I am a <span name="age"></span style="text-align: justify"> years old developer, who loves learning and working with new technologies and especially with Android. Always looking for the best code possible, I also code for fun and experiment with projects in my free time such as  creating LED thermometers to display the temperature and humidity of my plants. In my free time, I also enjoy listening to <a class="button button--flex button--small button--link" href="https://open.spotify.com/playlist/0JijrKO2NngEANw65zb8qX?si=fa78e0b64eeb496a" target="_blank">music</a>, gardening and reading. My passions and my job give free rein to my creativity and imagination which are strong elements of my identity. I am interested in and totally immersed in all areas that will be part of tomorrow\'s IT. I am driven by the idea of improving the daily life of users. Looking to invest myself fully in projects that will be useful for the future, I am ready to solve  issues in wide and varied fields such as health and communication.',
         "about_resume":"Download my resume",
 
         //Skills
@@ -91,10 +91,10 @@ export let stringsData = {
         "project_ttl":"My projects",
         "project_sub":"My recent work",
 
-        "project_music_desc":"Kotlin<br>Simple music player with animations created by the music waves",
-        "project_coromap_desc":"Java, API Google Map<br>CoroMap is an interactive map on the Coronavirus",
-        "project_metronome_desc":"VUE.JS, C#<br>Simple web application that shows the subways in Paris and their schedule.",
-        "project_portfolio_desc":"Kotlin, Jetpack Compose<br>My android portfolio application",
+        "project_music_desc":"Kotlin<br>A music player with music generated animations.",
+        "project_coromap_desc":"Java, API Google Map<br>An interactive map on the Coronavirus with statistics for each country.",
+        "project_metronome_desc":"VUE.JS, C#<br>Map of Paris subways and their schedules.",
+        "project_portfolio_desc":"Kotlin, Jetpack Compose<br>The android application of my portfolio made with Jetpack Compose.",
 
         //testimonials
         "testimonial_ttl":"Recommendations",
@@ -136,7 +136,7 @@ export let stringsData = {
         //About
         "about_ttl":"À mon propos",
         "about_subtitle":"Une petite présentation s'impose",
-        "about_description":'Développeur de <span name="age"></span style="text-align: justify"> ans, j\'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, je code aussi pour le fun et expérimente avec des projets pendant mon temps libre comme par exemple en créant des thermomètres à écrans LED pour afficher la température et l’humidité de mes plantes. Pendant mon temps libre, j\'aime aussi écouter de la  <span class="button button--flex button--small button--link services__button">musique</span>, jardiner et lire. Mes passions et mon métier laissent libre cours à ma créativité et à mon imagination qui sont des éléments forts de mon identité. Je suis intéressé et m\'épanouis dans tous les secteurs qui feront partie de l\'informatique de demain. Je suis motivé par l\'idée d’améliorer le quotidien des utilisateurs. Je cherche à m’investir pleinement dans des projets qui seront utiles pour le futur en travaillant avec des problématiques liées à la santé ou à la communication.',
+        "about_description":'Développeur de <span name="age"></span style="text-align: justify"> ans, j\'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, je code aussi pour le fun et expérimente avec des projets pendant mon temps libre comme par exemple en créant des thermomètres à écrans LED pour afficher la température et l’humidité de mes plantes. Pendant mon temps libre, j\'aime aussi écouter de la 							<a class="button button--flex button--small button--link" href="https://open.spotify.com/playlist/0JijrKO2NngEANw65zb8qX?si=fa78e0b64eeb496a" target="_blank">musique</a>, jardiner et lire. Mes passions et mon métier laissent libre cours à ma créativité et à mon imagination qui sont des éléments forts de mon identité. Je suis intéressé et m\'épanouis dans tous les secteurs qui feront partie de l\'informatique de demain. Je suis motivé par l\'idée d’améliorer le quotidien des utilisateurs. Je cherche à m’investir pleinement dans des projets qui seront utiles pour le futur en travaillant avec des problématiques liées à la santé ou à la communication.',
         "about_resume":"Télécharge mon CV",
         "about_playlist":"Tu as trouvé ma playlist pour développer!",
     
@@ -209,10 +209,10 @@ export let stringsData = {
         "project_ttl":"Mes projets",
         "project_sub":"Mes travaux récents",
 
-        "project_music_desc":"Kotlin<br>Lecteur de musique simple avec des animations créent par les ondes de la musique",
-        "project_coromap_desc":"Java, API Google Map<br>CoroMap est une carte interactive sur le Coronavirus",
-        "project_metronome_desc":"VUE.JS, C#<br>Simple web application that shows the subways in Paris and the schedule.",
-        "project_portfolio_desc":"Kotlin, Jetpack Compose<br>Mon application android portfolio",
+        "project_music_desc":"Kotlin<br>Un lecteur de musique avec des animations générés par la musique.",
+        "project_coromap_desc":"Java, API Google Map<br>Une carte interactive sur le Coronavirus avec des statistiques pour chaque pays.",
+        "project_metronome_desc":"VUE.JS, C#<br>Carte des métros de Paris et leurs horaires.",
+        "project_portfolio_desc":"Kotlin, Jetpack Compose<br>L'application android de mon portfolio réalisé avec Jetpack Compose.",
 
         //testimonials
         "testimonial_ttl":"Recommandations",

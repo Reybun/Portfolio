@@ -136,7 +136,7 @@ export let stringsData = {
         //About
         "about_ttl":"À mon propos",
         "about_subtitle":"Une petite présentation s'impose",
-        "about_description":'Développeur de <span name="age"></span style="text-align: justify"> ans, j\'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, je code aussi pour le fun et expérimente avec des projets pendant mon temps libre comme par exemple en créant des thermomètres à écrans LED pour afficher la température et l’humidité de mes plantes. Pendant mon temps libre, j\'aime aussi écouter de la 							<a class="button button--flex button--small button--link" href="https://open.spotify.com/playlist/0JijrKO2NngEANw65zb8qX?si=fa78e0b64eeb496a" target="_blank">musique</a>, jardiner et lire. Mes passions et mon métier laissent libre cours à ma créativité et à mon imagination qui sont des éléments forts de mon identité. Je suis intéressé et m\'épanouis dans tous les secteurs qui feront partie de l\'informatique de demain. Je suis motivé par l\'idée d’améliorer le quotidien des utilisateurs. Je cherche à m’investir pleinement dans des projets qui seront utiles pour le futur en travaillant avec des problématiques liées à la santé ou à la communication.',
+        "about_description":'Développeur de <span name="age"></span style="text-align: justify"> ans, j\'aime les défis, apprendre et travailler avec des nouvelles technologies et tout particulièrement avec Android. Toujours à la recherche du meilleur code possible, je code aussi pour le fun et expérimente avec des projets pendant mon temps libre comme par exemple en créant des thermomètres à écrans LED pour afficher la température et l’humidité de mes plantes. Pendant mon temps libre, j\'aime aussi écouter de la 							<a class="button button--flex button--small button--link" href="https://open.spotify.com/playlist/0JijrKO2NngEANw65zb8qX?si=fa78e0b64eeb496a" target="_blank">musique</a>, jardiner et lire. Mes passions et mon métier laissent libre cours à ma créativité et à mon imagination qui sont des éléments forts de mon identité. Je m\'épanouis dans tous les secteurs qui feront partie de l\'informatique de demain. Je suis motivé par l\'idée d’améliorer le quotidien des utilisateurs. Je cherche à m’investir pleinement dans des projets qui seront utiles pour le futur en travaillant avec des problématiques liées à la santé ou à la communication.',
         "about_resume":"Télécharge mon CV",
         "about_playlist":"Tu as trouvé ma playlist pour développer!",
     
@@ -158,7 +158,7 @@ export let stringsData = {
 
 
         //Rush
-        "rush_ttl":"RUSH sur les serveur",
+        "rush_ttl":"RUSH sur les serveurs",
         "rush_1":"Un projet pour se démarquer",
         "rush_2":"C’est au cours du semestre 5 de ma formation en développement logiciel, qu’il m’a été demandé de réaliser un projet en lien avec la thématique du semestre. Au cours de ma formation, chaque semestre, les projets ont été pour moi l’opportunité de faire la découverte de nouvelles techniques et de me challenger sur des thématiques qui m'intéressent. Ce semestre l’a été tout particulièrement, celui-ci étant le dernier avant la réalisation de mon stage. C’est donc un projet qui m’a permis de me démarquer auprès des entreprises.",
         "rush_3":"Plutôt prévenir que guérir",
